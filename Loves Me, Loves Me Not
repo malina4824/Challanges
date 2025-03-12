@@ -1,0 +1,15 @@
+# Given an integer n, print a string that alternates between the phrases "Loves me" and "Loves me not" for each number from 1 to n. 
+# The sequence should start with "Loves me" and alternate accordingly.
+	
+def ma_iubeste(n):
+    loves_yes = "Loves me "
+    loves_not = "Loves me not "
+    seq = ""
+    for i in range(n):
+        if i% 2 == 0:
+            seq = seq + loves_yes 
+        else:
+            seq = seq + loves_not
+            
+    return seq
+    
