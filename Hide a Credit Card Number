@@ -1,0 +1,9 @@
+#Write a function that takes a credit card number and transforms it into a string where all digits except the last four are replaced with asterisks.
+ 
+def sir(n):
+    nou  = str(n)
+    aster = 12 * "*"
+    last_digits = nou[12:]
+    final = aster + last_digits
+    print(final)
+   
