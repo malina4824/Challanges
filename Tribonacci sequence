@@ -1,0 +1,12 @@
+#The "Tribonacci sequence" challenge is a twist on the famous Fibonacci sequence, where each number is the sum of the preceding three numbers.
+#For example, 0, 1, 1, 2, 4, 7 …
+#The challenge: Write a function that returns the nth number in the Tribonacci sequence.
+
+def sir(n):
+    if n == 0:
+        return n
+    elif n == 1 or n == 2:
+        return(1)
+    else:
+        return (sir(n-1)+sir (n-2) + sir(n-3))
+        
