@@ -1,0 +1,93 @@
+# Hogwarts Sorting Hat Algorithm - www.101computing.net/hogwarts-sorting-hat-algorithm
+# Hogwarts Sorting Hat Algorithm
+
+# Step 1: Initialise the Sorting Hat
+print("~~~~~~~~~~~~~~~~~~~~~~~")
+print("~                     ~")
+print("~   The Sorting Hat   ~")
+print("~                     ~")
+print("~~~~~~~~~~~~~~~~~~~~~~~")
+print("")
+print("Welcome to Hogwarts school of witchcraft and wizardry!")
+print("Answer the following questions to be assigned your new house.")
+print("")
+gryffindor = 0    
+hufflepuff = 0
+ravenclaw = 0
+slytherin = 0
+# Step 2: Collect user inputs
+brave = input("Are you a brave person?").lower()
+if brave=="yes":
+  gryffindor = gryffindor + 1
+
+patient = input("Would you describe yourself as being patient?").lower()
+if patient=="yes":
+  hufflepuff = hufflepuff + 1 
+else:
+  slytherin = slytherin + 1 
+
+focused_and_studios = input("Are you focused and studios?").lower()
+if focused_and_studios == "yes":
+   ravenclaw += 1
+
+creative = input("Are you creative?").lower()
+if creative == "yes":
+   ravenclaw += 1
+   
+organised = input("Are you organised?").lower()
+if organised == "yes":
+   ravenclaw += 1
+   
+kind = input("Are you kind?").lower()
+if kind == "yes":
+   ravenclaw += 1
+   hufflepuff = hufflepuff + 1 
+   gryffindor = gryffindor + 1
+
+fair_play = input("Are you fair play?").lower()
+if fair_play  == "yes":
+   hufflepuff = hufflepuff + 1 
+   gryffindor = gryffindor + 1
+elif fair_play == "no":
+   slytherin = slytherin + 1
+   
+   
+loyal = input("Are you loyal").lower()
+if loyal == "yes":
+   ravenclaw += 1
+   gryffindor = gryffindor + 1
+elif loyal == "no":
+   slytherin = slytherin + 1
+   
+competitive = input("Are you competitive?").lower()
+if competitive== "yes":
+   gryffindor = gryffindor + 1
+   slytherin = slytherin + 1
+   
+friendly = input("Are you friendly?").lower()
+if friendly == "yes":
+   ravenclaw += 1
+   hufflepuff = hufflepuff + 1 
+   gryffindor = gryffindor + 1
+elif friendly == "no":
+   slytherin = slytherin + 1
+   
+# Step 4: Display the scores
+print("Total Scores:")
+print(" - Gryffindor:" + str(gryffindor))
+print(" - Ravenclaw:" + str(ravenclaw))
+print(" - Hufflepuff:" + str(hufflepuff))
+print(" - Slytherin:" + str(slytherin))
+   
+   
+if gryffindor >= ravenclaw and gryffindor >= hufflepuff and gryffindor >= slytherin:
+   print("You belong to Gryffindor")
+elif ravenclaw >= gryffindor  and ravenclaw >= hufflepuff and ravenclaw >= slytherin:
+   print("You belong to Ravenclaw")
+elif hufflepuff >= ravenclaw and hufflepuff >= gryffindor and hufflepuff >= slytherin:
+   print("You belong to Hufflepuff")
+elif slytherin >= ravenclaw and slytherin >= gryffindor  and slytherin >= hufflepuff:
+   print("You belong Slytherin")
+   
+ 
+   
